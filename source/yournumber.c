@@ -56,7 +56,7 @@ void thank_you() {
 
 int main()
 {
-    // inits
+	// inits
 	int cursor = 0;
 	int selector = 0;
 	const char * chars = "+0123456789";
