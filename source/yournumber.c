@@ -47,7 +47,6 @@ void thank_you() {
 	m3_puts(100, 50, "THANK", CLR_BLACK);
 	m3_puts(108, 62, "YOU", CLR_BLACK);
 
-
 	for (int r = 0; r < 9; r++) {
 		for (int c = 0; c < 9; c++) {
 			m3_rect(97 + (c * scale), 74 + (r * scale), 97 + scale + (c * scale), 74 + scale + (r * scale), heart[r][c]);
@@ -56,13 +55,14 @@ void thank_you() {
 }
 
 int main()
-{	
+{
+    // inits
 	int cursor = 0;
 	int selector = 0;
 	const char * chars = "+0123456789";
 
 	REG_DISPCNT= DCNT_MODE3 | DCNT_BG2;
-	
+
 	txt_init_std();
 
 	// clear
